@@ -1,0 +1,17 @@
+.main-button{
+    padding:20px;
+}
+
+.main-button:hover{
+    color:red;
+}
+
+.pseudo{
+    font-size: 10px;
+}
+
+.pseudo::before/*first-line/*first-letter*/{ 
+    content: '앞면에 추가하는 Before';
+    color:palevioletred;
+    font-size: 30px;/*첫 글자만 크게 넣고 싶다면?*/
+}
