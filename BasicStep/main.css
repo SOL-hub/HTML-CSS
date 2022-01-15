@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box; /*이러면 패딩보더 포함함*/
+}
+
+.profile {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+p{
+    /*모든 P 태그를 뜻함 p { } 이거*/
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+.box{
+    width: 200px;
+    background: coral;
+    display: block; /*가로행 전부 차지해주세요. 라는 뜻*/
+    border-radius: 5px;
+    margin: 10px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    width: 20%;
+    height: 400px;
+    background: chocolate;
+    /*float: left;*/
+}
+
+.left-menu{
+    width: 20%;
+    height: 400px;
+    display: inline-block; /*내 크기만큼 차지*/
+    vertical-align: top;
+    background: crimson;
+}
+
+.right{
+    width: 80%;
+    height: 400px;
+    background: cornflowerblue;
+     /*float: left;*/
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    /*clear : both; */
+    /* clear : both; 다음에 오는 요소에게 주면 float로 발생하는 이상한 현상 해결가능*/
+}
+
+/*blog css*/
+.blog-content{
+    width: 80%;
+    height: 200px;
+    background: darkgrey;
+    float: left;
+}
+
+.blog{
+    width: 20%;
+    height: 200px;
+    background: darkorange;
+    float: left;
+}
+
+.blog-name{
+    float: left;
+}
+
+.navbar>li{
+    display: inline-block;
+}
+
+/*layout2*/
+.main-background{
+    width: 100px;
+    height: 500px;
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(50%); /*보정입히기*/
+}
+
+.main-title{
+    color:blueviolet;
+}
+
+.blogmain-button{
+    padding: 15px;
+    font-size: 20px;
+    position: relative; /*내 기준을 따라 이동해줘*/
+    top: 100px;
+    left: 100px;
+    bottom: 100px;
+
+    /*
+    top은 position에 따라 이동
+    position을 부여하면
+        1. 좌표이동가능
+        2. 공중에 뜸*/
+
+        position: static; /*움직이지 못하게*/
+        position: fixed;
+        position : absolute; /*부모를 기준으로 좌표이동하고 싶을 때*/ 
+}
+
+.explain-box{
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    position: relative;
+    top: -40px;
+    
+}
+
+.text_input{
+    padding:10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+/*input { } 이렇게 하면 모든 input이 { }안에 있는 거에 적용되지만 어떤 하나만 input만 적용하고 싶을 때는?*/
+
+input[type=text]{
+    border-radius: 9px;
+}

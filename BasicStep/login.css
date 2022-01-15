@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+/*div, input, textarea{
+    box-sizing: border-box; //이렇게도 사용가능
+}*/
+.form_background{
+    background-color: #302C2C;
+    padding: 30px;
+    width: 100%;
+}
+
+.form_white{
+    background-color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-input{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius:5px;
+    width: 100%;
+}
+
+.w-100{
+    width: 100%;
+    padding: 10px;
+}
+
+.w-50{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.yellow-Button{
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    background-color: wheat;
+    border: none;
+    border-radius: 5px;
+    width:15%;
+    color: #302C2C;
+    font-weight: bold;
+}
+
+.cart-background{
+    width: 100%;
+    background-color: burlywood;
+    padding: 30px;
+}
+
+.NewTable{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cart-background td, .cart-background th{
+    padding: 15px;
+    border-bottom: 1px solid grey;
+} 
+
+/*.CellLong{
+    width: 30px;
+}*/
+
+.NewTable th:nth-child(4){
+    width: 15%;
+}
+
+.btn{
+    padding: 15px;
+    font-size: 20;
+    border: none;
+    color: white;
+    background-color: violet;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: brown;
+}
+
+
+@media screen and (max-width:1200px){
+    .form-input{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .form-input{
+        font-size: 4x;
+    }
+}

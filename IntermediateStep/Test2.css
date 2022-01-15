@@ -1,0 +1,17 @@
+h3{
+    text-align: center;
+    padding: 20px;
+}
+
+.col-10 col-md-5{
+    padding: 20px;
+}
+
+.col-10 col-md-5 order-md-2 .bukbuk{
+    color : red;
+}
+
+div.col-10 col-md-5 order-md-2 .bukbuk{
+    color : red;
+}
+
