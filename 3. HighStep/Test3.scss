@@ -1,0 +1,36 @@
+.shList {
+    li{
+        list-style:none;
+        padding: 15px;
+        border: 1px solid #222;
+    }
+
+    .active{
+        background: hotpink;
+        color: wheat;
+    }
+}
+
+.alertBox-green{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #222;
+    background: green;
+    color:white;
+}
+
+.alertBox-yellow{
+    @extend .alertBox-green;
+    background: yellow;
+}
+
+.alertBox-blue{
+    @extend .alertBox-green;
+    background:skyblue;
+}
+
+.row .col-6{
+    float: left;
+    width: 50%;
+    padding:15px;
+}

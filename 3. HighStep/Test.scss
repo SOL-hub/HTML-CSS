@@ -1,0 +1,64 @@
+$메인칼라 : #222;
+
+.background{
+    background-color: $메인칼라;
+    }
+
+.box{
+    color: white;
+}
+
+%btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    }
+
+.btn-green{
+    @extend %btn;
+    color:green;
+    }
+
+%Div{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.blueDiv{
+    @extend %Div;
+    background: blue;
+}
+
+.greenDiv{
+    @extend %Div;
+    background: green;
+}
+
+.redDiv{
+    @extend %Div;
+    background: red;
+}
+
+
+@use 'reset';
+
+@mixin  작명($바꿔) {
+    font-size: $바꿔;
+    letter-spacing: -1px;
+}
+
+h2{
+    @include 작명(20px)
+}
+
+h3{
+    @include 작명()
+}
+
+h4{
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+
+/*다른 파일에 있는 내용 가져오고 싶을 때*/
