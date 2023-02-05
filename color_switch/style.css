@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #C5A4FA;
+}
+.login {
+    position: relative;
+    padding: 50px;
+    background: #fff;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+
+  .login h1 {
+    font-weight: 800;
+    border-left: 15px solid #C5A4FA;
+    line-height: 1em;
+    padding-left: 10px;
+    transition: 0.5s;
+    color: #333;
+  }
+
+  .login .inputBox input
+  {
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .login .inputBox input#btn {
+    border: none;
+    background: #C5A4FA;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .login .group
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .login .group a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .login .group a:nth-child(2) {
+    font-weight: 600;
+    text-decoration: underline;
+  }
